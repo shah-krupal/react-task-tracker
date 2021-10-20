@@ -1,6 +1,10 @@
 import logo from './logo.svg';
+import react from 'react';
 import './App.css';
-import searchbar from './searchbar';
+import SearchBar from './components/SearchBar';
+import Header from './components/Header';
+import Button from './components/Button';
+import teachState from './components/teachState';
 
 
 function App() 
@@ -8,9 +12,10 @@ function App()
   return (
     <div className="Head">
       
-      <searchbar/>
-      
-      
+      <Header/>
+      <Button/>
+      <SearchBar/>
+      <teachState/>
     </div>
   );
 }

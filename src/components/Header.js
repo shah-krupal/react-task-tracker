@@ -6,11 +6,14 @@ const Header = (props) => {
         console.log('Its click')
     }
     return (
-        <header>
-            <h1><b><i>Header.js {props.title}</i></b></h1>
-            <Button color='#48A14D' text='ADD to CART' onClick={onClick}/>
-        </header>
+        <h1>
+            <h1><b><i>Header.js  </i></b></h1>
+            <Button color='#48A14D' text={props.title} onClick={onClick}/>
+        </h1>
     )
+}
+Header.defaultProps ={
+    title: "SECOND"
 }
 
 
