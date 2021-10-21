@@ -1,17 +1,16 @@
-import { render } from '@testing-library/react'
 import React from 'react'
 import { useState } from 'react'
 
-const teachState = () => {
-    const [title, settitle] = useState=""
-    const [data,setdata] = useState="0"
+const TeachState = () => {
+    const [title, Settitle] = useState(' ')
+    const [data,Setdata] = useState(0)
 
     const updatetitleclick = () =>{
-        settitle("REACT STATES") ;
+        Settitle("REACT STATES") ;
     };
 
     const updatedataclicked = () =>{
-        setdata(data+1) ;
+        Setdata(data+1) ;
     };
     return (
         <div>
@@ -24,4 +23,4 @@ const teachState = () => {
     
 }
 
-export default teachState
+export default TeachState

@@ -4,7 +4,7 @@ import './App.css';
 import SearchBar from './components/SearchBar';
 import Header from './components/Header';
 import Button from './components/Button';
-import teachState from './components/teachState';
+import TeachState from './components/TeachState';
 
 
 function App() 
@@ -15,7 +15,7 @@ function App()
       <Header/>
       <Button/>
       <SearchBar/>
-      <teachState/>
+      <TeachState/>
     </div>
   );
 }
