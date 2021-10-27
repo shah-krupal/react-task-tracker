@@ -1,19 +1,29 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState } from 'react';
 
-const SearchBar = (props) => {
+const AddItems = (props) => {
     const [name,setName] = useState("") ;
     const [price,setPrice] = useState(0) ;
     const [type,setType] = useState("") ;
     const [brand,setBrand] = useState("") ;
 
-    const searchButtonPressed = () => {
-        props.updateSearchParams({name:name, price:price, type:type,brand:brand}) ;
+    const addItemButtonPressed = () => {
+        {/*console.log(name) ;
+        console.log(price) ;
+        console.log(type) ;
+        console.log(brand) ;*/}
+        props.addItem({name:name, price:price, type:type,brand:brand}) ;
+
+        setName("") ;
+        setPrice(0) ;
+        setType('') ;
+        setBrand('') ;
     };
+
 
     return (
         <div>
-            <h2>Search for an Item</h2>
+            <h2>Add an Item</h2>
             <form>
                 <label htmlFor="name-field">Name Search</label>
                 <input id="name-field" type = "text"  value = {name} onChange = { (e) => setName(e.target.value)}/>
@@ -27,7 +37,7 @@ const SearchBar = (props) => {
                 <label htmlFor="brand-field">Brand Search</label>
                 <input id="brand-field" type = "text" value = {brand} onChange = { (e) => setBrand(e.target.value)}/>
                 <br/>
-                <button type = "button" onClick = { searchButtonPressed }>Search</button>
+                <button type = "button" onClick = { addItemButtonPressed }>Add Item</button>
                 
             </form> 
 
@@ -35,5 +45,4 @@ const SearchBar = (props) => {
     )
 }
 
-
-export default SearchBar
+export default AddItems
