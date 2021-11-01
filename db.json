@@ -1,3 +1,25 @@
 {
-    "items": [{"id":0, "name":"test"}]
+  "items": [
+    {
+      "name": "TIME",
+      "price": "-7",
+      "type": "TIM",
+      "brand": "TI",
+      "id": 1
+    },
+    {
+      "name": "KRUPAL",
+      "price": "-3",
+      "type": "KDE",
+      "brand": "SKj",
+      "id": 2
+    },
+    {
+      "name": "S",
+      "price": "2",
+      "type": "S",
+      "brand": "S",
+      "id": 3
+    }
+  ]
 }
